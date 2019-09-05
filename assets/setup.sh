@@ -4,6 +4,7 @@
 export DEBIAN_FRONTEND=noninteractive
 
 # Prepare to install Oracle
+mv /assets/sources.list /etc/apt/sources.list &&
 apt-get update &&
 apt-get install -y libaio1 net-tools bc &&
 ln -s /usr/bin/awk /bin/awk &&

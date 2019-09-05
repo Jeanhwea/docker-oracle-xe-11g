@@ -1,6 +1,6 @@
 FROM ubuntu:18.04
 
-MAINTAINER Wei-Ming Wu <wnameless@gmail.com>
+LABEL maintainer="Jinghui Hu" version="1.0"
 
 ADD assets /assets
 RUN /assets/setup.sh
