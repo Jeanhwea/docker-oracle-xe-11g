@@ -1,4 +1,6 @@
 #!/bin/bash
+export TZ=Asia/Shanghai
+
 LISTENER_ORA=/u01/app/oracle/product/11.2.0/xe/network/admin/listener.ora
 TNSNAMES_ORA=/u01/app/oracle/product/11.2.0/xe/network/admin/tnsnames.ora
 

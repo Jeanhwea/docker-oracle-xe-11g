@@ -3,6 +3,9 @@
 # avoid dpkg frontend dialog / frontend warnings
 export DEBIAN_FRONTEND=noninteractive
 
+# setup timezone
+export TZ='Asia/Shanghai'
+
 # Prepare to install Oracle
 mv /assets/sources.list /etc/apt/sources.list &&
 apt-get update &&
@@ -28,6 +31,7 @@ printf 8080\\n1521\\noracle\\noracle\\ny\\n | /etc/init.d/oracle-xe configure &&
 echo 'export ORACLE_HOME=/u01/app/oracle/product/11.2.0/xe' >> /etc/bash.bashrc &&
 echo 'export PATH=$ORACLE_HOME/bin:$PATH' >> /etc/bash.bashrc &&
 echo 'export ORACLE_SID=XE' >> /etc/bash.bashrc &&
+echo 'export TZ=Asia/Shanghai' >> /etc/bash.bashrc &&
 
 # Install startup script for container
 mv /assets/startup.sh /usr/sbin/startup.sh &&
