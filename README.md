@@ -15,11 +15,6 @@ docker pull jeanhwea/oxe11g
 ```
 SSH server has been removed since 18.04, please use "docker exec" or 16.04 instead.
 
-## Installation(with Ubuntu 16.04)
-```
-docker pull jeanhwea/oxe11g:16.04
-```
-
 ## Quick Start
 
 Run with 1521 port opened:
